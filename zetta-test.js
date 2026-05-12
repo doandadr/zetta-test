@@ -11,7 +11,7 @@ const sentences = [
   'Sed non nibh quam. Pellentesque eget ultrices diam. Aliquam diam justo, consectetur ac dui lobortis, vestibulum bibendum lorem. Sed porta pulvinar.',
 ];
 
-function altResult(sentences) {
+function result(sentences) {
     return Math.max(
         ...sentences.map(sentence =>
             sentence.trim().split(/\s+/).length
@@ -19,7 +19,7 @@ function altResult(sentences) {
     )
 }
 
-function result(sentences) {
+function altResult(sentences) {
   // iterate sentences
   // split sentence in to array of words .split(" ")
   // count array length
@@ -37,4 +37,4 @@ function result(sentences) {
   return maxWordCount
 }
 
-console.log(altResult(sentences));
+console.log(result(sentences));
